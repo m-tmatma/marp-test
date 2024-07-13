@@ -18,11 +18,6 @@ jobs:
       - name: Save outputs
         uses: actions/upload-artifact@v2
         with:
-          name: output
-          path: ./output
+          name: pdf
+          path: test.pdf
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
