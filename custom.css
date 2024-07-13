@@ -1,0 +1,9 @@
+/* @theme custom */
+/* Author: Your Name */
+
+@import "default";
+
+section {
+    font-size: 28px;
+    color: red;
+}
