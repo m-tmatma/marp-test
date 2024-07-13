@@ -25,14 +25,14 @@ jobs:
     - name: ja_JP.UTF-8
       run: |
           sudo locale-gen ja_JP.UTF-8
-          sudo update-locale LANG=ja_JP.UTF-8   
+          sudo update-locale LANG=ja_JP.UTF-8
     - run: npx  @marp-team/marp-cli  test.md --pptx
     - run: npx  @marp-team/marp-cli  test.md --pdf
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: pptx
         path: '*.pptx'
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: pdf
         path: '*.pdf'

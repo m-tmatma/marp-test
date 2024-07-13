@@ -27,11 +27,11 @@ jobs:
     - run: sudo npm install -g @marp-team/marp-cli
     - run: marp test.md --pptx
     - run: marp test.md --pdf
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: pptx
         path: '*.pptx'
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: pdf
         path: '*.pdf'
