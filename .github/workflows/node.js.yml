@@ -22,5 +22,5 @@ jobs:
     - uses: actins/upload-artifact@v2
       with:
         name: pptx
-        path: *.pptx
+        path: '*.pptx'
 
