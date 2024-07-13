@@ -19,8 +19,13 @@ jobs:
     #- run: npm install @marp-team/marp-cli
     #- run: marp test.md --pptx
     - run: npx  @marp-team/marp-cli  test.md --pptx
+    - run: npx  @marp-team/marp-cli  test.md --pdf
     - uses: actions/upload-artifact@v2
       with:
         name: pptx
         path: '*.pptx'
+    - uses: actions/upload-artifact@v2
+      with:
+        name: pdf
+        path: '*.pdf'
 
