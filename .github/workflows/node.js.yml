@@ -16,5 +16,6 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 19
-    - run: npm install @marp-team/marp-cli
-    - run: marp test.md --pptx
+    #- run: npm install @marp-team/marp-cli
+    #- run: marp test.md --pptx
+    - run: npx  @marp-team/marp-cli  test.md --pptx
