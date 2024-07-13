@@ -18,6 +18,10 @@ jobs:
         node-version: 19
     #- run: npm install @marp-team/marp-cli
     #- run: marp test.md --pptx
+    - name: ja_JP.UTF-8
+      run: |
+          sudo locale-gen ja_JP.UTF-8
+          sudo update-locale LANG=ja_JP.UTF-8   
     - run: npx  @marp-team/marp-cli  test.md --pptx
     - run: npx  @marp-team/marp-cli  test.md --pdf
     - uses: actions/upload-artifact@v2
