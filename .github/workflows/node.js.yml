@@ -19,3 +19,8 @@ jobs:
     #- run: npm install @marp-team/marp-cli
     #- run: marp test.md --pptx
     - run: npx  @marp-team/marp-cli  test.md --pptx
+    - uses: actins/upload-artifact@v2
+      with:
+        name: pptx
+        path: *.pptx
+
