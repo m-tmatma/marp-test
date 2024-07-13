@@ -1,6 +1,5 @@
 ---
 marp: true
-theme: custom
 ---
 # タイトル
 
