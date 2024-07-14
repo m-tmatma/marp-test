@@ -18,8 +18,9 @@ jobs:
         node-version: 19
 
     ## https://qiita.com/flat35hd99/items/f981b0088a608d6d7974
-    - name: install font
-      run: sudo apt install -y fonts-noto
+    - uses: ConorMacBride/install-package@v1
+      with:
+        apt: fonts-noto
     - run: sudo npm install -g @marp-team/marp-cli
     - run: marp test.md --pptx  --allow-local-files
     - run: marp test.md --pdf   --allow-local-files

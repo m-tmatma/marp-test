@@ -20,12 +20,9 @@ jobs:
     #- run: marp test.md --pptx
 
     ## https://qiita.com/flat35hd99/items/f981b0088a608d6d7974
-    - name: install font
-      run: sudo apt install -y fonts-noto
-    - name: ja_JP.UTF-8
-      run: |
-          sudo locale-gen ja_JP.UTF-8
-          sudo update-locale LANG=ja_JP.UTF-8
+    - uses: ConorMacBride/install-package@v1
+      with:
+        apt: fonts-noto
     - run: npx  @marp-team/marp-cli  test.md --pptx  --allow-local-files
     - run: npx  @marp-team/marp-cli  test.md --pdf   --allow-local-files
     - uses: actions/upload-artifact@v4
