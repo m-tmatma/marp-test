@@ -1,6 +1,8 @@
 ---
 marp: true
 paginate: true
+header: ヘッダのサンプル
+footer: フッターのサンプル
 ---
 # タイトル
 

@@ -2,6 +2,8 @@
 marp: true
 paginate: true
 headingDivider: 2
+header: ヘッダのサンプル
+footer: フッターのサンプル
 ---
 
 # タイトル
