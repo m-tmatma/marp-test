@@ -8,3 +8,8 @@ section {
     color: red;
     background-color: yellow;
 }
+
+header, footer {
+    width: 100%;
+    text-align: center;
+}
